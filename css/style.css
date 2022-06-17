@@ -1,0 +1,56 @@
+
+.body {
+    background: #fff;
+    color: #666666;
+    font-family: "Open Sans", sans-serif;
+}
+
+/*----------------------------------
+NAV VAR
+------------------------------------*/
+.header {
+    background-color: #111;
+    padding: 10px 0;
+    height: 90px;
+    margin: 0;
+}
+
+.nav-logo {
+    float: left;
+}
+
+.nav-logo img {
+    padding: 0;
+    margin-left: 20px;
+    max-height: 100px;
+}
+
+@media (max-width: 768px) {
+    .header {
+        height: 80px
+    }
+    .nav-logo img {
+        max-height: 40px;
+    }
+}
+
+.navbar-top {
+    float: right;
+    margin: 5px 25px ;
+    padding: 25px;
+    display: flex;
+    justify-content: right;
+    gap: 10rem;
+}
+
+.navbar-top a {
+    font-size: 1.5rem;
+    color: #FFB612;
+    text-decoration: none;
+}
+@media (max-width: 768px) {
+    .navbar-top {
+        height: 80px;
+        display: none;
+    }
+}
