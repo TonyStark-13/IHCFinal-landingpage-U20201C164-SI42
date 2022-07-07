@@ -138,7 +138,7 @@ body{
     display: flex;
     grid-template-columns: 5fr 4fr;
     place-items: center;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .descrip img{
@@ -190,10 +190,21 @@ body{
     text-align: center;
 }
 
-.flex-row-Contenido {
-    display: flex;
-    align-content: flex-start;
-    padding: 5px;
+.Formulario{
+    max-width: 100%;
+    width: calc(100%/2 - 25px);
+    margin: 0px auto;
+    padding: 20px;
+    position: relative;
+    display: grid;
+}
+
+@media (max-width:812px) {
+    .Formulario{
+        padding: 1%;
+        width: 600px;
+        margin-bottom: 2%;
+    }
 }
 
 .planNutricional-container {
@@ -207,7 +218,7 @@ body{
     border: 2px solid #2D2D2D;
     background-color: black;
     padding: 10px;
-    min-width: 500px ;
+    width: auto;
     margin: 20px 0;
     border-radius: 10px;
 }
