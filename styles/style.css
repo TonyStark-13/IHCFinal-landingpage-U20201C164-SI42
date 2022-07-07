@@ -10,7 +10,7 @@ a {
 
 body{
     font-family: sans-serif;
-    padding: 80px 0px;
+    padding: 80px 0 0 0;
     background-color: #E5E5E5;
 }
 
@@ -21,8 +21,8 @@ body{
     height: 80px;
     position: absolute;
     width: 100%;
-    top: 0%;
-    left: 0%;
+    top: 0;
+    left: 0;
 }
 .nav {
     display: flex;
@@ -65,7 +65,7 @@ body{
         background-color: dimgray;
         background-size: cover;
         flex-direction: column;
-        margin-right: 0px;
+        margin-right: 0;
         position: absolute;
         left: 0;
         top: 60px;
@@ -127,8 +127,11 @@ body{
 }
 
 @media (max-width: 780px) {
-    .portada{
-        font-size: 20px;
+    .titulo{
+        font-size: 40px;
+    }
+    .par{
+        font-size: 15px;
     }
 }
 
@@ -136,13 +139,13 @@ body{
 
 .descrip {
     display: flex;
-    grid-template-columns: 5fr 4fr;
     place-items: center;
-    padding: 1rem;
+    padding: 5%;
+    width: 100%;
 }
 
 .descrip img{
-    width: 100%;
+    width: 40%;
 }
 
 .textos{
@@ -163,17 +166,95 @@ body{
 @media (max-width: 780px) {
     .descrip {
         flex-direction: column;
+        padding: 50px;
+    }
+    .descrip h1{
+        font-size: 40px;
+    }
+    .descrip img{
+        width: 79%;
     }
     .textos{
         padding: initial;
     }
 }
 
+/*---------------------PLAN---------------------*/
+
+.plan {
+    text-align: center;
+    background-color: #2D2D2D;
+    padding: 5%;
+    color: white;
+}
+.plan h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.planContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.cardP{
+    background: #fff;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    margin: 25px;
+}
+.cardTittle{
+    background-color: black;
+    border-radius: 10px 10px 0 0;
+    padding: 10%;
+    font-size: 30px;
+}
+.letter{
+    color: #FFB612;
+}
+.cardMoney{
+    background-color: #FFB612;
+    color: black;
+    font-weight: bold;
+    padding: 5%;
+}
+.cardTxt{
+    padding: 10%;
+    color: black;
+    align-content: center;
+}
+/*---------------------MARCAS---------------------*/
+.marcas{
+    align-items: center;
+    width: 100%;
+    display: grid;
+    padding: 3% 5%;
+}
+
+.imgsM{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+
+}
+
+.imgsM img{
+    width: 20%;
+    height: 50%;
+    padding: 2%;
+}
+
+
 /*---------------------FORM---------------------*/
 
 .formsU{
     background-color: #2D2D2D;
-    padding: 50px;
+    padding-left: 7%;
+    padding-right: 1%;
+    padding-top: 5%;
 }
 
 .formsU h1{
@@ -183,17 +264,67 @@ body{
     text-align: center;
 }
 
-.formsU p{
+.pformsU {
     color: white;
+    background-color: #2D2D2D;
     font-size: 20px;
     font-weight: lighter;
     text-align: center;
 }
 
+.formBF{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+@media (max-width: 780px) {
+    .formBF {
+        flex-direction: column;
+    }
+    .business{
+        margin-top: 7px;
+    }
+    .formsU{
+        padding-right: 7%;
+    }
+}
+
+.business h2{
+    background-color: black;
+    color: #FFB612;
+    text-align: center;
+    padding: 35px;
+}
+
+.business h3{
+    background-color: #FFB612;
+    color: #000000;
+    text-align: center;
+    padding: 15px;
+}
+.txtBusi{
+    background-color: #FFFFF8;
+    padding: 50px;
+}
+
+.business h4{
+    color: #000000;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 0;
+}
+.business p{
+    margin-top: 0;
+    color: #000000;
+    text-align: center;
+    padding: 15px;
+}
+
 .Formulario{
     max-width: 100%;
     width: calc(100%/2 - 25px);
-    margin: 0px auto;
+    margin: 0 auto;
     padding: 20px;
     position: relative;
     display: grid;
@@ -259,8 +390,8 @@ body{
 
 footer{
     width: 100%;
-    padding: 50px 0px;
-    margin: 0px;
+    padding: 50px 0;
+    margin: 0;
     background-color: #FFB612;
 }
 
@@ -296,7 +427,7 @@ footer{
     max-width: 1200px;
     margin: auto;
     text-align: center;
-    padding: 0px 40px;
+    padding: 0 40px;
 }
 
 /*EXTRAS*/
