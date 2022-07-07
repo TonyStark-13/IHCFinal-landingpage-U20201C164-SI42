@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body{
+    font-family: sans-serif;
+    padding: 80px 0px;
+    background-color: #E5E5E5;
+}
+
+/*---------------------NAV---------------------*/
+
+.header {
+    background: black;
+    height: 80px;
+    position: absolute;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+}
+
+.navMenu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.navMenu a{
+    color: #FFB612;
+}
+
+.logo {
+    height: 80px;
+    padding: 0 40px;
+    line-height: 80px;
+}
+
+.navMenu li {
+    color: #FFB612;
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-decoration: none;
+    width: max-content;
+}
+
+@media (max-width: 780px) {
+    .logo {
+        height: 50px;
+        position: center;
+    }
+    .navMenu {
+        background-color: dimgray;
+        background-size: cover;
+        flex-direction: column;
+        margin-right: 0px;
+        position: absolute;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        align-items: center;
+        padding: 20px 0;
+    }
+}
+
+/*-----------------------------------------------MAIN--------------------------------------------------*/
+
+/*---------------------PORTADA---------------------*/
+
+.portada{
+    text-align: left;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    padding-left: 70px;
+    padding-top: 130px;
+    padding-bottom: 130px;
+    display: block;
+}
+
+.txtlogo{
+    color: #109FAD;
+}
+
+.portada{
+    display: grid;
+}
+
+.titulo{
+    font-size: 55px;
+    color: #313131;
+}
+
+.par{
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.Botones{
+    margin-top: 20px;
+    align-items: center;
+}
+
+.playStore{
+    width: 120px;
+    height: 45px;
+}
+
+.appStore{
+    width: 120px;
+    height: 45px;
+}
+
+@media (max-width: 780px) {
+    .portada{
+        font-size: 20px;
+    }
+}
+
+/*---------------------DESCRIP---------------------*/
+
+.descrip {
+    display: flex;
+    grid-template-columns: 5fr 4fr;
+    place-items: center;
+    padding: 2rem;
+}
+
+.descrip img{
+    width: 100%;
+}
+
+.textos{
+    padding-left: 50px;
+    width: 100%;
+}
+
+.textos h1{
+    font-size: 55px;
+    font-weight: bold;
+    color: #313131;
+}
+
+.textos p{
+    font-size: 25px;
+}
+
+@media (max-width: 780px) {
+    .descrip {
+        flex-direction: column;
+    }
+    .textos{
+        padding: initial;
+    }
+}
+
+/*---------------------FORM---------------------*/
+
+.formsU{
+    background-color: #2D2D2D;
+    padding: 50px;
+}
+
+.formsU h1{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.formsU p{
+    color: white;
+    font-size: 20px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.flex-row-Contenido {
+    display: flex;
+    align-content: flex-start;
+    padding: 5px;
+}
+
+.planNutricional-container {
+    align-items: flex-start;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+}
+
+.finput {
+    border: 2px solid #2D2D2D;
+    background-color: black;
+    padding: 10px;
+    min-width: 500px ;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.finput label {
+    color: #FFB612;
+    margin: 5px 0;
+    padding-left: 15px;
+    width: 100%;
+    display: inline-block;
+}
+
+.finput input {
+    outline: none;
+    padding-left: 15px;
+    height: 30px;
+    margin: 5px;
+    background-color: black;
+    color: white;
+    border-style: none;
+    width: 150px;
+}
+
+.iandbtn {
+    text-align: center;
+}
+
+.iandbtn input {
+    background-color: #FFB612;
+    color: white;
+    border-color: #FFB612;
+    width: 120px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+/*---------------------FOOTER---------------------*/
+
+footer{
+    width: 100%;
+    padding: 50px 0px;
+    margin: 0px;
+    background-color: #FFB612;
+}
+
+.containerFooter {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: auto;
+}
+
+.boxFooter {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.boxFooter img {
+    width: 100px;
+}
+
+.boxFooter h2 {
+    margin-bottom: 30px;
+    color: black;
+}
+
+.boxFooter a, p {
+    margin-top: 10px;
+    color: black;
+}
+
+.copyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+/*EXTRAS*/
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] { -moz-appearance:textfield; }
