@@ -8,16 +8,20 @@ a {
     text-decoration: none;
 }
 
+p{
+    font-family: 'PT Sans', sans-serif;
+}
+
 body{
     font-family: sans-serif;
     padding: 80px 0 0 0;
-    background-color: #E5E5E5;
+    background-color: #f0f1f4;
 }
 
 /*---------------------NAV---------------------*/
 
 .header {
-    background: black;
+    background: #121114;
     height: 80px;
     position: absolute;
     width: 100%;
@@ -31,14 +35,16 @@ body{
     margin: 0 auto;
 }
 
-.navMenu {
+.nav-menu {
     display: flex;
     margin-right: 40px;
     list-style: none;
 }
 
-.navMenu a{
-    color: #FFB612;
+.nav-menu a{
+    color: #cfc2a0;
+    font-weight: bold;
+    font-family: 'PT Sans', sans-serif;
 }
 
 .logo {
@@ -47,8 +53,7 @@ body{
     line-height: 80px;
 }
 
-.navMenu li {
-    color: #FFB612;
+.nav-menu li {
     font-size: 18px;
     margin: 0 10px;
     line-height: 80px;
@@ -56,22 +61,26 @@ body{
     width: max-content;
 }
 
-@media (max-width: 780px) {
+.iconVar{
+    color: #cfc2a0;
+    background: none;
+    font-size: 30px;
+    border: none;
+    padding: 0 20px;
+    display: none;
+}
+
+@media only screen and (max-width: 557px) {
     .logo {
-        height: 50px;
+        height: 70px;
         position: center;
     }
-    .navMenu {
-        background-color: dimgray;
-        background-size: cover;
-        flex-direction: column;
-        margin-right: 0;
-        position: absolute;
-        left: 0;
-        top: 60px;
-        width: 100%;
-        align-items: center;
-        padding: 20px 0;
+    .nav-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .nav-menu a{
+        margin: 5px;
     }
 }
 
@@ -92,8 +101,8 @@ body{
     display: block;
 }
 
-.txtlogo{
-    color: #109FAD;
+.txt-logo{
+    color: #f0f1f4;
 }
 
 .portada{
@@ -102,16 +111,18 @@ body{
 
 .titulo{
     font-size: 55px;
+    font-family: 'PT Sans', sans-serif;
     color: #313131;
+    font-weight: bold;
 }
 
 .par{
     font-size: 20px;
-    color: white;
+    color: #121114;
     font-weight: bold;
 }
 
-.Botones{
+.botones{
     margin-top: 20px;
     align-items: center;
 }
@@ -142,6 +153,7 @@ body{
     place-items: center;
     padding: 5%;
     width: 100%;
+    background-color: #f0f1f4;
 }
 
 .descrip img{
@@ -154,6 +166,7 @@ body{
 }
 
 .textos h1{
+    font-family: 'PT Sans', sans-serif;
     font-size: 55px;
     font-weight: bold;
     color: #313131;
@@ -183,11 +196,12 @@ body{
 
 .plan {
     text-align: center;
-    background-color: #2D2D2D;
+    background-color: #121114;
     padding: 5%;
     color: white;
 }
 .plan h1{
+    font-family: 'PT Sans', sans-serif;
     font-size: 30px;
     margin-bottom: 10px;
 }
@@ -207,23 +221,25 @@ body{
 }
 .cardTittle{
     background-color: black;
+    font-family: 'PT Sans', sans-serif;
     border-radius: 10px 10px 0 0;
     padding: 10%;
     font-size: 30px;
 }
 .letter{
-    color: #FFB612;
+    color: #cfc2a0;
 }
 .cardMoney{
-    background-color: #FFB612;
+    background-color: #cfc2a0;
     color: black;
     font-weight: bold;
+    font-family: 'PT Sans', sans-serif;
     padding: 5%;
 }
 .cardTxt{
     padding: 10%;
     color: black;
-    align-content: center;
+    align-items: center;
 }
 /*---------------------MARCAS---------------------*/
 .marcas{
@@ -231,6 +247,8 @@ body{
     width: 100%;
     display: grid;
     padding: 3% 5%;
+    font-family: 'PT Sans', sans-serif;
+    background-color: #f0f1f4;
 }
 
 .imgsM{
@@ -251,14 +269,14 @@ body{
 /*---------------------FORM---------------------*/
 
 .formsU{
-    background-color: #2D2D2D;
-    padding-left: 7%;
-    padding-right: 1%;
-    padding-top: 5%;
+    background-color: #121114;
+    padding: 5% 1% 5% 7%;
+
 }
 
 .formsU h1{
     color: white;
+    font-family: 'PT Sans', sans-serif;
     font-size: 40px;
     font-weight: bold;
     text-align: center;
@@ -266,7 +284,7 @@ body{
 
 .pformsU {
     color: white;
-    background-color: #2D2D2D;
+    background-color: #121114;
     font-size: 20px;
     font-weight: lighter;
     text-align: center;
@@ -293,20 +311,26 @@ body{
 
 .business h2{
     background-color: black;
-    color: #FFB612;
+    font-family: 'PT Sans', sans-serif;
+    color: #cfc2a0;
     text-align: center;
     padding: 35px;
 }
 
 .business h3{
-    background-color: #FFB612;
+    background-color: #cfc2a0;
     color: #000000;
     text-align: center;
     padding: 15px;
+    font-family: 'PT Sans', sans-serif;
 }
 .txtBusi{
     background-color: #FFFFF8;
     padding: 50px;
+}
+
+.txtBusi h4{
+    font-family: 'PT Sans', sans-serif;
 }
 
 .business h4{
@@ -329,6 +353,7 @@ body{
     padding: 20px;
     position: relative;
     display: grid;
+    font-family: 'PT Sans', sans-serif;
 }
 
 @media (max-width:812px) {
@@ -356,7 +381,7 @@ body{
 }
 
 .finput label {
-    color: #FFB612;
+    color: #cfc2a0;
     margin: 5px 0;
     padding-left: 15px;
     width: 100%;
@@ -372,6 +397,7 @@ body{
     color: white;
     border-style: none;
     width: 150px;
+    font-family: 'PT Sans', sans-serif;
 }
 
 .iandbtn {
@@ -379,9 +405,9 @@ body{
 }
 
 .iandbtn input {
-    background-color: #FFB612;
+    background-color: #cfc2a0;
     color: white;
-    border-color: #FFB612;
+    border-color: #cfc2a0;
     width: 120px;
     height: 50px;
     border-radius: 5px;
@@ -393,7 +419,7 @@ footer{
     width: 100%;
     padding: 50px 0;
     margin: 0;
-    background-color: #FFB612;
+    background-color: #f0f1f4;
 }
 
 .containerFooter {
@@ -402,6 +428,7 @@ footer{
     justify-content: space-between;
     max-width: 992px;
     margin: auto;
+    font-family: 'PT Sans', sans-serif;
 }
 
 .boxFooter {
